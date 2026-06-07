@@ -15,6 +15,11 @@
 - run `uv run main.py`
 - run `uv run pytest`
 
+### GitHub Agentic Workflow
+
+This repo is configured to run GitHub agentic workflow. Set up
+`COPILOT_GITHUB_TOKEN` in your GitHub repo to run the automated PR review.
+
 ### Build the feature list with AI
 
 Start a session with AI to brainstorm what to build and key architecture design.
