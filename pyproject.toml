@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-ai-new"
+version = "0.1.0"
+description = "Scaffold a Python repo with AI harness"
+readme = "README.md"
+requires-python = ">=3.13"
+
+[project.scripts]
+python-ai-new = "main:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "ruff>=0.15.16",
+]
